@@ -1,0 +1,81 @@
+.key-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.key-stats .card h3 {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+}
+
+.key-stats .big-num {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.key-stats .sub {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.key-stats .text-success { color: #27500A; }
+.key-stats .text-danger { color: #791F1F; }
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.toolbar .input {
+    max-width: 260px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pagination a, .pagination span {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pagination .is-current {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+}
+
+.alert-banner {
+    background: var(--color-primary-dark);
+    color: #fff;
+    border-radius: var(--radius-card);
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.alert-banner .btn--secondary {
+    border-color: #fff;
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .key-stats { grid-template-columns: 1fr; }
+}

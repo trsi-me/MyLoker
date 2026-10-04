@@ -1,0 +1,86 @@
+.feedback-hero {
+    margin-bottom: 20px;
+}
+
+.feedback-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.feedback-tabs__btn {
+    padding: 12px 20px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.feedback-tabs__btn.is-active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.feedback-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+    align-items: start;
+}
+
+.upload-zone {
+    border: 2px dashed var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 32px;
+    text-align: center;
+    cursor: pointer;
+    background: var(--color-bg);
+}
+
+.upload-zone:hover {
+    border-color: var(--color-primary);
+}
+
+.upload-zone input[type="file"] {
+    display: none;
+}
+
+.stars {
+    display: flex;
+    gap: 6px;
+}
+
+.stars button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--color-border);
+    padding: 0;
+    line-height: 1;
+}
+
+.stars button.is-on {
+    color: var(--color-warning);
+}
+
+.sla-card {
+    margin-bottom: 16px;
+}
+
+.sla-card img, .sla-card .placeholder-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: var(--radius-btn);
+    background: var(--color-bg);
+}
+
+@media (max-width: 1200px) {
+    .feedback-layout { grid-template-columns: 1fr; }
+}

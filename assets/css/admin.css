@@ -1,0 +1,101 @@
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.admin-stats .card h3 {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.admin-stats .big-num {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.admin-floor {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+    align-items: start;
+}
+
+.floor-plan-card {
+    min-height: 320px;
+}
+
+.maintenance-side .maint-card {
+    margin-bottom: 12px;
+    padding: 16px;
+}
+
+.maint-card__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.maint-card p {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+.table-toolbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 8px;
+}
+
+.dropdown-menu__panel {
+    position: absolute;
+    top: 100%;
+    inset-inline-end: 0;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    min-width: 140px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: none;
+    z-index: 50;
+}
+
+.dropdown-menu.is-open .dropdown-menu__panel {
+    display: block;
+}
+
+.dropdown-menu__panel a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: var(--color-text-main);
+}
+
+.dropdown-menu__panel a:hover {
+    background: var(--color-bg);
+    text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+    .admin-stats { grid-template-columns: repeat(3, 1fr); }
+    .admin-floor { grid-template-columns: 1fr; }
+}

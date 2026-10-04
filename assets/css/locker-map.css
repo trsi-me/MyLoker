@@ -1,0 +1,118 @@
+.find-hero__dots {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.find-hero__dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.find-hero__dots span:nth-child(1) { background: var(--color-danger); }
+.find-hero__dots span:nth-child(2) { background: var(--color-warning); }
+.find-hero__dots span:nth-child(3) { background: var(--color-success); }
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.filter-bar select {
+    min-width: 160px;
+}
+
+.find-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+    align-items: start;
+}
+
+.map-section__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.terms-banner {
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: var(--radius-card);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.terms-banner .btn--secondary {
+    border-color: #fff;
+    color: #fff;
+}
+
+.terms-banner .btn--secondary:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.booking-panel .selected-badge {
+    margin-bottom: 8px;
+}
+
+.booking-panel .locker-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.duration-cards {
+    display: grid;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.duration-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-btn);
+    padding: 12px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.duration-card.is-selected {
+    border-color: var(--color-primary);
+    background: var(--color-primary-light);
+}
+
+.duration-card strong {
+    display: block;
+    font-size: 15px;
+}
+
+.duration-card span {
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+.aisle-gap {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    background: var(--color-bg);
+    border-radius: 6px;
+}
+
+@media (max-width: 1280px) {
+    .find-layout { grid-template-columns: 1fr; }
+}

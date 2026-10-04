@@ -1,0 +1,7 @@
+.maintenance-form .card {
+    max-width: 720px;
+}
+
+.priority-select option {
+    font-weight: 400;
+}
