@@ -106,14 +106,14 @@ CREATE TABLE notifications (
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
--- Passwords: students = Student@123, admin = Admin@123
+-- Passwords: students = , admin = 
 INSERT INTO users (user_id, student_id, full_name, email, password_hash, phone, role, avatar) VALUES
-(1, 'ADMIN001', 'مشرف النظام', 'admin@psau.edu.sa', '$2y$10$XbideZzJ0TgBGpqdvqvd9u5HrUoaU2HSjFu.m4incos2Tx7uGZquy', '0500000001', 'admin', NULL),
-(2, '20241001', 'أحمد محمد العتيبي', 'ahmad.m@student.psau.edu.sa', '$2y$10$yI4fhip2qf/RwbVwJKmIBeE9BWAY.hWuQqRm93yo9z8xDjSnURi72', '0501111111', 'student', NULL),
-(3, '20241002', 'فاطمة سعد الدوسري', 'fatima.s@student.psau.edu.sa', '$2y$10$yI4fhip2qf/RwbVwJKmIBeE9BWAY.hWuQqRm93yo9z8xDjSnURi72', '0502222222', 'student', NULL),
-(4, '20241003', 'خالد عبدالله القحطاني', 'khaled.a@student.psau.edu.sa', '$2y$10$yI4fhip2qf/RwbVwJKmIBeE9BWAY.hWuQqRm93yo9z8xDjSnURi72', '0503333333', 'student', NULL),
-(5, '20241004', 'نورة علي الشهري', 'noura.a@student.psau.edu.sa', '$2y$10$yI4fhip2qf/RwbVwJKmIBeE9BWAY.hWuQqRm93yo9z8xDjSnURi72', '0504444444', 'student', NULL),
-(6, '20241005', 'سعد فيصل المطيري', 'saad.f@student.psau.edu.sa', '$2y$10$yI4fhip2qf/RwbVwJKmIBeE9BWAY.hWuQqRm93yo9z8xDjSnURi72', '0505555555', 'student', NULL);
+(1, 'ADMIN001', 'مشرف النظام', 'admin@psau.edu.sa', '', '0500000001', 'admin', NULL),
+(2, '20241001', 'أحمد محمد العتيبي', 'ahmad.m@student.psau.edu.sa', '', '0501111111', 'student', NULL),
+(3, '20241002', 'فاطمة سعد الدوسري', 'fatima.s@student.psau.edu.sa', '', '0502222222', 'student', NULL),
+(4, '20241003', 'خالد عبدالله القحطاني', 'khaled.a@student.psau.edu.sa', '', '0503333333', 'student', NULL),
+(5, '20241004', 'نورة علي الشهري', 'noura.a@student.psau.edu.sa', '', '0504444444', 'student', NULL),
+(6, '20241005', 'سعد فيصل المطيري', 'saad.f@student.psau.edu.sa', '', '0505555555', 'student', NULL);
 
 -- 60 lockers: 3 floors x 20 lockers, zone B scientific wing
 INSERT INTO lockers (locker_id, locker_number, floor_level, zone, size, status, location_desc) VALUES
